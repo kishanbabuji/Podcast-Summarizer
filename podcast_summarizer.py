@@ -25,7 +25,7 @@ def get_episode_audio_url(episode_id):
     response = requests.request('GET', url, headers=headers_listennotes).json()
 
     #data = response.json
-    st.write(data)
+    #st.write(data)
     # pprint.pprint(data)
 
     if response.status_code == 200:
@@ -40,7 +40,7 @@ def get_episode_audio_url(episode_id):
             st.write("Episode title not found in the data.")
     else:
         st.write(f"Failed to retrieve data. Status code: {response.status_code}") 
-        
+
     episode_title = data['title']
     thumbnail = data['thumbnail']
     podcast_title = data['podcast']['title']
