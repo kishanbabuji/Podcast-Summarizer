@@ -2,8 +2,6 @@
 
 The Podcast Summarizer is a web application that allows users to quickly and easily obtain summaries of their favorite podcast episodes. This app leverages the ListenNotes API for fetching episode data and Assembly AI for generating summarized chapter transcriptions. Whether you're a podcast enthusiast looking to save time or a content creator searching for episode highlights, this app simplifies the process of extracting key information.
 
- Certainly! Below is an example README file for a Podcast Summarizer web app. You can use this as a template and customize it to fit your specific application and requirements.
-
 ## Table of Contents
 
 - [Features](#features)
