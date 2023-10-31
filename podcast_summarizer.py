@@ -24,7 +24,7 @@ def get_episode_audio_url(episode_id):
     url = listennotes_episode_endpoint + '/' + episode_id
     response = requests.request('GET', url, headers=headers_listennotes)
 
-    data = response.json
+    data = response.json()
 
     episode_title = data['title']
     thumbnail = data['thumbnail']
