@@ -22,9 +22,9 @@ headers_listennotes = {
 # Function to get the url with podcast audio for transcribing as well as key information about the podcast
 def get_episode_audio_url(episode_id):
     url = listennotes_episode_endpoint + '/' + episode_id
-    response = requests.request('GET', url, headers=headers_listennotes)
+    data = requests.request('GET', url, headers=headers_listennotes).json()
 
-    data = response.json()
+    st.write(data)
     # pprint.pprint(data)
 
     episode_title = data['title']
