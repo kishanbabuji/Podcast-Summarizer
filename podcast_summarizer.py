@@ -10,13 +10,13 @@ os.environ['API_KEY_LISTENNOTES'] = st.secrets['API_KEY_LISTENNOTES']
 
 transcript_endpoint = 'https://api.assemblyai.com/v2/transcript'
 headers_assemblyai = {
-    "authorization": os.environ['API_KEY_ASSEMBLYAI'],
+    "authorization": st.secrets['API_KEY_ASSEMBLYAI'],
     "content-type": "application/json"
 }
 
 listennotes_episode_endpoint = 'https://listen-api.listennotes.com/api/v2/episodes'
 headers_listennotes = {
-  'X-ListenAPI-Key': os.environ['API_KEY_ASSEMBLYAI'],
+  'X-ListenAPI-Key': st.secrets['API_KEY_ASSEMBLYAI'],
 }
 
 # Function to get the url with podcast audio for transcribing as well as key information about the podcast
