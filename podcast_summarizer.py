@@ -3,6 +3,7 @@ import json
 import time
 import pprint
 import os
+import streamlit as st
 
 os.environ['API_KEY_ASSEMBLYAI'] = st.secrets['API_KEY_ASSEMBLYAI']
 os.environ['API_KEY_LISTENNOTES'] = st.secrets['API_KEY_LISTENNOTES']
