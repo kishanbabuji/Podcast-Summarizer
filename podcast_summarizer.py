@@ -16,7 +16,7 @@ headers_assemblyai = {
 
 listennotes_episode_endpoint = 'https://listen-api.listennotes.com/api/v2/episodes'
 headers_listennotes = {
-  'X-ListenAPI-Key': st.secrets['API_KEY_ASSEMBLYAI'],
+  'X-ListenAPI-Key': st.secrets['API_KEY_LISTENNOTES'],
 }
 
 # Function to get the url with podcast audio for transcribing as well as key information about the podcast
