@@ -24,22 +24,7 @@ def get_episode_audio_url(episode_id):
     url = listennotes_episode_endpoint + '/' + episode_id
     response = requests.request('GET', url, headers=headers_listennotes)
 
-    #data = response.json
-    #st.write(data)
-    # pprint.pprint(data)
-
-    if response.status_code == 200:
-        data = response.json()
-        st.write(data)  # For debugging purposes, you can view the 'data' dictionary
-
-        # Check if the 'title' key exists in the 'data' dictionary
-        if 'title' in data:
-            episode_title = data['title']
-            st.write(f"Episode Title: {episode_title}")
-        else:
-            st.write("Episode title not found in the data.")
-    else:
-        st.write(f"Failed to retrieve data. Status code: {response.status_code}") 
+    data = response.json
 
     episode_title = data['title']
     thumbnail = data['thumbnail']

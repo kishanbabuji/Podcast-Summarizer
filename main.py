@@ -61,7 +61,7 @@ if button:
     st.image(thumbnail, width=200)
     st.markdown(f'#### {episode_title}')
     if data['explicit_content']:
-        st.markdown(f'##### Explicit Content')
+        st.markdown(f'##### :red[Explicit Content]')
     st.markdown(f'##### Episode Duration: ' + get_clean_time_S(data['episode_duration']))
 
     for chp in chapters:
