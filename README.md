@@ -8,8 +8,9 @@ The Podcast Summarizer is a web application that allows users to quickly and eas
 
 - [Features](#features)
 - [Demo](#demo)
-- [Getting Started](#getting-started)
 - [Usage](#usage)
+- [Getting Started](#getting-started)
+
 
 ## Features
 
@@ -26,6 +27,16 @@ The Podcast Summarizer is a web application that allows users to quickly and eas
 [[LINK TO DEMO]
 ](https://podcast-summarizer2023.streamlit.app/)
 - #### Please avoid misusing the tool as there are only a limited number of requests that can be made each month
+
+## Usage
+
+1. Input the podcast episode ID you want to summarize from [ListenNotes](https://www.listennotes.com/). To do so, search for the podcast you want to summarize, click more (button with three dots) and then "Use API to fetch JSON". The episode ID should be under the "id" text box.
+
+    - If you would like to simply test out the capabilities of the web app, use this sample episoe ID: **"e0c8a6e3525c4b1a8d06f1d3bf4f9ed6"**
+  
+2. Click the "Summarize" button.
+
+3. The app will retrieve the episode details, summarize the chapter transcriptions, and display the results.
 
 ## Getting Started
 
@@ -58,10 +69,6 @@ To run this web app locally or deploy it on your preferred cloud platform, follo
 
    Open your web browser and navigate to `http://localhost:8501` to use the web app locally.
 
-## Usage
 
-1. Input the podcast episode ID you want to summarize from https://www.listennotes.com/api/. If you would like to simply test out the capabilities of the web app, use this sample episoe ID: **"e0c8a6e3525c4b1a8d06f1d3bf4f9ed6"**
-3. Click the "Summarize" button.
-4. The app will retrieve the episode details, summarize the chapter transcriptions, and display the results.
 
 
